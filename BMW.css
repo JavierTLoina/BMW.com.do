@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+ @media screen and (max-width: 768px){
+    .container{
+      padding: 20px;
+    }
+  }
+  
+  
+  nav h1 {
+    color: #ced4da;
+    font-family: "Roboto", sans-serif;
+    padding-left: 40px
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ced4da;
+  }
+  
+  nav a:hover {
+    background-image: linear-gradient(to right, #e9ecef, #2b81cc);
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 30px #2b81cc;
+  }
+  
+  .header-text {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    position: absolute;
+    top: 28%;
+    left: 5%;
+    z-index: 1;
+    width: 50%;
+    line-height: 1.5;
+  }
+  
+  .header-text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    background-image: linear-gradient(
+      to left,
+      #81c4ff,
+      #16588e,
+      #81c4ff,
+      #16588e
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .header-text p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 7px;
+    color: #868e96;
+  }
+  
+  nav ul li {
+    list-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    padding-right: 20px;
+  }
+  
+  header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .nav-flex {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .header-button {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 14px;
+    padding: 8px;
+    border-radius: 10%;
+    border: none;
+  
+    color: #212529;
+    background-color: #81c4ff;
+    position: absolute;
+    left: 250px;
+    top: 350px;
+    box-shadow: 0 0 20px #2b81cc;
+  }
+  
+  .header-button:hover {
+    background-color: #a5d8ff;
+    background: linear-gradient(to right, #2b81cc, #81c4ff, #f03e3e);
+    box-shadow: 0 0 40px #2b81cc;
+    cursor: pointer;
+  }
+
+  .icon{
+    border-radius: 50%;
+    background-color: #81c4ff;
+    padding: 5px;
+    stroke:#185383;
+    width: 40px;
+    height:  40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 70px;
+    padding: 30px;
+  }
+
+  article p{
+    color: #343a40
+  }
+
+  article h1{
+    color:#16588e;
+  }
+
+  .grid-article-3col{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.7;
+    background-color: #d0ebff
+
+  }
+
+  .grid-article-3col:hover{
+    box-shadow:0 0 10px #185383
+  }
+
+  .New-models{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 800;
+    color: #343a40;
+    margin-bottom: 60px
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: "Roboto", sans-serif;
+    gap: 10px;
+    padding: 40px;
+
+  }
+
+  section h1{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    color: #212529;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #a5d8ff;
+    color:#16588e
+  }
+
+  section p{
+    line-height: 1.6;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 20px;
+    color: #495057;
+    font-weight: 500;
+  }
+
+ .section-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);*/
+ }
+
+ .grid-section-4col{
+   margin-right: 20px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+   background-color: #e7f5ff
+ }
+
+ 
+
+ .grid-section-4col:hover{
+  animation: Up 1s ease;
+  box-shadow: 0 0 8px #16588e
+ }
+
+ @keyframes Up {
+    0%{
+      transform: translateY(-10px);
+    }
+
+    50%{
+      transform: translateY(-20px);
+    }
+    
+    100%{
+      transform: translateY(-0px);
+    }
+ }
